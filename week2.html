@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Practice Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      max-width: 900px;
+    }
+    table, th, td {
+      border: 1px solid #444;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    form {
+      margin-top: 30px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select {
+      padding: 8px;
+      width: 100%;
+      max-width: 400px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Section: Ordered List -->
+  <section class="section">
+    <h2>Course Objectives</h2>
+    <ol type="I">
+      <li>Implement HTML5 images, lists, tables, and forms.</li>
+      <li>Use form validation attributes.</li>
+      <li>Apply multimedia elements such as audio and video.</li>
+    </ol>
+  </section>
+
+  <!-- Section: External Image -->
+  <section class="section">
+    <h2>Sample Image from Pexels</h2>
+    <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" 
+         alt="Beautiful mountain landscape" 
+         width="600">
+  </section>
+
+  <!-- Section: Table -->
+  <section class="section">
+    <h2>Contact List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mary Johnson</td>
+          <td>123 Ocean View, Lagos</td>
+          <td>08012345678</td>
+          <td>maryj@example.com</td>
+        </tr>
+        <tr>
+          <td>Ali Musa</td>
+          <td>45 Unity Street, Abuja</td>
+          <td>08023456789</td>
+          <td>alim@example.com</td>
+        </tr>
+        <tr>
+          <td>Ada Obi</td>
+          <td>10 Garden Road, Enugu</td>
+          <td>08134567890</td>
+          <td>adaobi@example.com</td>
+        </tr>
+        <tr>
+          <td>David Bello</td>
+          <td>78 Airport Rd, Ibadan</td>
+          <td>07056789012</td>
+          <td>davidb@example.com</td>
+        </tr>
+        <tr>
+          <td>Grace Uche</td>
+          <td>33 King’s Way, Port Harcourt</td>
+          <td>08067890123</td>
+          <td>graceu@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section: Registration Form -->
+  <section class="section">
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <!-- Name -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <!-- Email -->
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Create a password" 
+             pattern=".{6,}" title="Password must be at least 6 characters long" required>
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <!-- Gender (Radio Buttons) -->
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label>
+
+      <!-- Interests (Checkboxes) -->
+      <label>Interests:</label>
+      <input type="checkbox" id="coding" name="interests" value="Coding">
+      <label for="coding">Coding</label>
+      <input type="checkbox" id="reading" name="interests" value="Reading">
+      <label for="reading">Reading</label>
+      <input type="checkbox" id="sports" name="interests" value="Sports">
+      <label for="sports">Sports</label>
+
+      <!-- Dropdown -->
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">-- Select your country --</option>
+        <option
